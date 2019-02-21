@@ -1,0 +1,22 @@
+logging:
+  level:
+    root: INFO
+spring:
+  thymeleaf:
+    cache: false
+---
+spring:
+    profiles:
+      active: test
+logging:
+    level: DEBUG
+---
+spring:
+  profiles:
+    active: product
+
+logging:
+  path: /tmp/
+  file: BookWorm.log
+  level:
+    root: WRAN

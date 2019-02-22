@@ -7,7 +7,7 @@ spring:
 ---
 spring:
     profiles:
-      active: test
+      #active: test
 logging:
     level: DEBUG
 ---

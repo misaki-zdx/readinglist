@@ -1,207 +1,780 @@
-2019-02-21 10:24:35.055  WARN 7716 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-21 13:50:01.013  INFO 13136 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 13136 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
-2019-02-21 13:50:01.019  INFO 13136 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: test
-2019-02-21 13:50:04.178  INFO 13136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-21 13:50:04.259  INFO 13136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 2 repository interfaces.
-2019-02-21 13:50:04.576  INFO 13136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aea4ed38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-21 13:50:05.051  INFO 13136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-02-21 13:50:05.089  INFO 13136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-21 13:50:05.090  INFO 13136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-02-21 13:50:05.109  INFO 13136 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
-2019-02-21 13:50:05.289  INFO 13136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-21 13:50:05.289  INFO 13136 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4138 ms
-2019-02-21 13:50:05.628  INFO 13136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-21 13:50:05.954  INFO 13136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-21 13:50:06.084  INFO 13136 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-02-21 13:50:06.359  INFO 13136 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-21 13:50:06.365  INFO 13136 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-21 13:50:06.614  INFO 13136 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-21 13:50:06.879  INFO 13136 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-02-21 13:50:08.150  INFO 13136 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@f2becb2'
-2019-02-21 13:50:08.157  INFO 13136 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-21 13:50:09.051  INFO 13136 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35f22eef, org.springframework.security.web.context.SecurityContextPersistenceFilter@26b3fe8, org.springframework.security.web.header.HeaderWriterFilter@f4d391c, org.springframework.security.web.csrf.CsrfFilter@76134251, org.springframework.security.web.authentication.logout.LogoutFilter@29dfc68f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62615be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20518250, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3605ab16, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d20195b, org.springframework.security.web.session.SessionManagementFilter@2fa2143d, org.springframework.security.web.access.ExceptionTranslationFilter@14bf9fd0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7455204c]
-2019-02-21 13:50:09.184  INFO 13136 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-21 13:50:09.218  WARN 13136 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-21 13:50:09.443  INFO 13136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-02-21 13:50:09.447  INFO 13136 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 10.275 seconds (JVM running for 16.576)
-2019-02-21 14:01:54.911  INFO 4476 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 4476 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
-2019-02-21 14:01:54.914  INFO 4476 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: product
-2019-02-21 14:01:55.539  INFO 4476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-21 14:01:55.585  INFO 4476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 2 repository interfaces.
-2019-02-21 14:01:55.851  INFO 4476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec4a1f33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-21 14:01:56.109  INFO 4476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-02-21 14:01:56.129  INFO 4476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-21 14:01:56.129  INFO 4476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-02-21 14:01:56.135  INFO 4476 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
-2019-02-21 14:01:56.239  INFO 4476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-21 14:01:56.239  INFO 4476 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1297 ms
-2019-02-21 14:01:56.352  INFO 4476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-21 14:01:56.420  INFO 4476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-21 14:01:56.461  INFO 4476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-02-21 14:01:56.502  INFO 4476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-21 14:01:56.503  INFO 4476 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-21 14:01:56.602  INFO 4476 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-21 14:01:56.692  INFO 4476 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-02-21 14:01:57.091  INFO 4476 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3e28af44'
-2019-02-21 14:01:57.093  INFO 4476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-21 14:01:57.446  INFO 4476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-21 14:01:57.474  WARN 4476 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-21 14:01:57.644  INFO 4476 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2019-02-22 14:41:49.562 ERROR 6792 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 14:41:50.150  INFO 6792 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 6792 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 14:41:50.151  INFO 6792 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: test
+2019-02-22 14:41:50.671  WARN 6792 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.readinglist.ReadingListRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-02-22 14:41:51.500 ERROR 6792 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-Using generated security password: 9dc886ca-3144-4ba8-9699-29b72eccc44b
+***************************
+APPLICATION FAILED TO START
+***************************
 
-2019-02-21 14:01:57.721  INFO 4476 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e288c76, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bd1098, org.springframework.security.web.header.HeaderWriterFilter@446dacf9, org.springframework.security.web.csrf.CsrfFilter@71d2261e, org.springframework.security.web.authentication.logout.LogoutFilter@a302f30, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53551fef, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@314c28dc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@738ed8f5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ef1fc8a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a562255, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6958d5d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cfb7450, org.springframework.security.web.session.SessionManagementFilter@abf1816, org.springframework.security.web.access.ExceptionTranslationFilter@35b58254, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a0ee80]
-2019-02-21 14:01:57.783  INFO 4476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-02-21 14:01:57.786  INFO 4476 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 3.208 seconds (JVM running for 3.813)
-2019-02-21 14:04:52.051 ERROR 9888 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
-2019-02-21 14:04:52.114  INFO 9888 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 9888 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
-2019-02-21 14:04:52.114  INFO 9888 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: production
-2019-02-21 14:04:52.744  INFO 9888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-21 14:04:52.790  INFO 9888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 2 repository interfaces.
-2019-02-21 14:04:53.049  INFO 9888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5cebfe2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-21 14:04:53.304  INFO 9888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-02-21 14:04:53.324  INFO 9888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-21 14:04:53.325  INFO 9888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-02-21 14:04:53.331  INFO 9888 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
-2019-02-21 14:04:53.437  INFO 9888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-21 14:04:53.438  INFO 9888 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1292 ms
-2019-02-21 14:04:53.554  INFO 9888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-21 14:04:53.629  INFO 9888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-21 14:04:53.672  INFO 9888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+Description:
+
+Parameter 0 of constructor in com.example.readinglist.ReadingListController required a bean of type 'com.example.readinglist.ReadingListRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.readinglist.ReadingListRepository' in your configuration.
+
+2019-02-22 14:41:51.520 ERROR 6792 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@4082ba93] to prepare test instance [com.example.readinglist.ReadingListControllerTest@e72dba7]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.readinglist.ReadingListRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.readinglist.ReadingListRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 42 common frames omitted
+
+2019-02-22 14:47:57.926 ERROR 12436 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 14:47:58.049  INFO 12436 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 12436 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 14:47:58.050  INFO 12436 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: test
+2019-02-22 14:47:58.275  WARN 12436 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.readinglist.ReadingListRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-02-22 14:48:00.328 ERROR 12436 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.readinglist.ReadingListController required a bean of type 'com.example.readinglist.ReadingListRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.readinglist.ReadingListRepository' in your configuration.
+
+2019-02-22 14:48:00.387 ERROR 12436 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@48075da3] to prepare test instance [com.example.readinglist.ReadingListControllerTest@2575f671]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.readinglist.ReadingListRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.readinglist.ReadingListRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 42 common frames omitted
+
+2019-02-22 14:51:34.582 ERROR 4996 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 14:51:34.699  INFO 4996 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 4996 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 14:51:34.700  INFO 4996 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: test
+2019-02-22 14:51:36.998  INFO 4996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 14:51:37.141  INFO 4996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115ms. Found 2 repository interfaces.
+2019-02-22 14:51:37.923  INFO 4996 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1b5b41a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 14:51:38.347  INFO 4996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 14:51:38.855  INFO 4996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 14:51:39.123  INFO 4996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-02-21 14:04:53.712  INFO 9888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-21 14:04:53.714  INFO 9888 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-21 14:04:53.806  INFO 9888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-21 14:04:53.889  INFO 9888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-02-21 14:04:54.303  INFO 9888 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5c1dd18'
-2019-02-21 14:04:54.305  INFO 9888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-21 14:04:54.663  INFO 9888 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-21 14:04:54.690  WARN 9888 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-21 14:04:54.861  INFO 9888 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 4254d00b-d9cf-43ca-b216-b644b8f00be9
-
-2019-02-21 14:04:54.939  INFO 9888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@544e6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@53564a4c, org.springframework.security.web.header.HeaderWriterFilter@51566ce0, org.springframework.security.web.csrf.CsrfFilter@6db04a6, org.springframework.security.web.authentication.logout.LogoutFilter@280c3dc0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@629de8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@dcdb883, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b430541, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7db2b614, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69a294d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e198c40, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65a66a75, org.springframework.security.web.session.SessionManagementFilter@17e6d07b, org.springframework.security.web.access.ExceptionTranslationFilter@1f013047, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5020e5ab]
-2019-02-21 14:04:55.000  INFO 9888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-02-21 14:04:55.002  INFO 9888 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 3.256 seconds (JVM running for 3.914)
-2019-02-21 14:05:28.321 ERROR 5680 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
-2019-02-21 14:05:28.403  INFO 5680 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 5680 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
-2019-02-21 14:05:28.403  INFO 5680 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: test
-2019-02-21 14:05:29.018  INFO 5680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-21 14:05:29.063  INFO 5680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 2 repository interfaces.
-2019-02-21 14:05:29.309  INFO 5680 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a2c37e38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-21 14:05:29.569  INFO 5680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-02-21 14:05:29.589  INFO 5680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-21 14:05:29.590  INFO 5680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-02-21 14:05:29.595  INFO 5680 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
-2019-02-21 14:05:29.709  INFO 5680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-21 14:05:29.709  INFO 5680 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1270 ms
-2019-02-21 14:05:29.822  INFO 5680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-21 14:05:29.885  INFO 5680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-21 14:05:29.924  INFO 5680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-02-22 14:51:39.431  INFO 4996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 14:51:39.433  INFO 4996 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 14:51:39.734  INFO 4996 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 14:51:41.236  INFO 4996 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 14:51:43.014  INFO 4996 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4bff28e7'
+2019-02-22 14:51:43.024  INFO 4996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 14:51:44.066  INFO 4996 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2431050d, org.springframework.security.web.context.SecurityContextPersistenceFilter@14b96c1e, org.springframework.security.web.header.HeaderWriterFilter@6371c5ec, org.springframework.security.web.csrf.CsrfFilter@4c91a008, org.springframework.security.web.authentication.logout.LogoutFilter@5444f1c3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a3e633a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@714b6999, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c70a1de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@441016d6, org.springframework.security.web.session.SessionManagementFilter@6738e8b2, org.springframework.security.web.access.ExceptionTranslationFilter@6e8aea7e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2aeb7c4c]
+2019-02-22 14:51:44.835  INFO 4996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 14:51:44.981  WARN 4996 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 14:51:45.565  INFO 4996 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 11.38 seconds (JVM running for 12.809)
+2019-02-22 14:51:45.840  INFO 4996 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-02-22 14:51:45.840  INFO 4996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 14:51:45.859  INFO 4996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 19 ms
+2019-02-22 14:51:45.955  INFO 4996 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-22 14:51:46.772  INFO 4996 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 14:51:46.774  INFO 4996 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 14:51:46.775  INFO 4996 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 14:51:46.784  INFO 4996 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 14:51:46.787  INFO 4996 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 15:19:44.902 ERROR 7408 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 15:19:45.200  INFO 7408 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 7408 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 15:19:45.201  INFO 7408 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: test
+2019-02-22 15:19:47.764  INFO 7408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 15:19:48.256  INFO 7408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 424ms. Found 2 repository interfaces.
+2019-02-22 15:19:49.509  INFO 7408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9808ae4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 15:19:49.981  INFO 7408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 15:19:50.529  INFO 7408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 15:19:50.755  INFO 7408 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-02-21 14:05:29.963  INFO 5680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-21 14:05:29.964  INFO 5680 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-21 14:05:30.048  INFO 5680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-21 14:05:30.147  INFO 5680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-02-21 14:05:30.554  INFO 5680 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1fa18f87'
-2019-02-21 14:05:30.556  INFO 5680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-21 14:05:30.920  INFO 5680 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2befb16f, org.springframework.security.web.context.SecurityContextPersistenceFilter@609ad016, org.springframework.security.web.header.HeaderWriterFilter@7b2f8152, org.springframework.security.web.csrf.CsrfFilter@4e4af370, org.springframework.security.web.authentication.logout.LogoutFilter@c683cf5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5ae16aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34647f58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@491cc0eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3151277f, org.springframework.security.web.session.SessionManagementFilter@5f9ccd0c, org.springframework.security.web.access.ExceptionTranslationFilter@603b9d4b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@320ba79f]
-2019-02-21 14:05:31.035  INFO 5680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-21 14:05:31.059  WARN 5680 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-21 14:05:31.216  INFO 5680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-02-21 14:05:31.219  INFO 5680 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 3.359 seconds (JVM running for 4.052)
-2019-02-21 14:07:45.151 ERROR 9456 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
-2019-02-21 14:07:45.252  INFO 9456 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 9456 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
-2019-02-21 14:07:45.253  INFO 9456 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: test
-2019-02-21 14:07:45.926  INFO 9456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-21 14:07:45.973  INFO 9456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 2 repository interfaces.
-2019-02-21 14:07:46.239  INFO 9456 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$205dad24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-21 14:07:46.514  INFO 9456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-02-21 14:07:46.537  INFO 9456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-21 14:07:46.538  INFO 9456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-02-21 14:07:46.544  INFO 9456 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
-2019-02-21 14:07:46.657  INFO 9456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-21 14:07:46.657  INFO 9456 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1367 ms
-2019-02-21 14:07:46.781  INFO 9456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-21 14:07:46.849  INFO 9456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-21 14:07:46.895  INFO 9456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-02-22 15:19:51.014  INFO 7408 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 15:19:51.016  INFO 7408 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 15:19:51.330  INFO 7408 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 15:19:51.660  INFO 7408 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 15:19:52.712  INFO 7408 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@949d347'
+2019-02-22 15:19:52.715  INFO 7408 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:19:53.733  INFO 7408 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70aa03c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@75da2db, org.springframework.security.web.header.HeaderWriterFilter@5cf33d25, org.springframework.security.web.csrf.CsrfFilter@1885dc2b, org.springframework.security.web.authentication.logout.LogoutFilter@34647f58, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2aeb7c4c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1826475, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e8aea7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44da745f, org.springframework.security.web.session.SessionManagementFilter@a80a896, org.springframework.security.web.access.ExceptionTranslationFilter@46b2a11a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@152035eb]
+2019-02-22 15:19:55.343  INFO 7408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:19:55.557  WARN 7408 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 15:19:57.150  INFO 7408 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 13.5 seconds (JVM running for 16.247)
+2019-02-22 15:19:59.259  INFO 7408 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-02-22 15:19:59.260  INFO 7408 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 15:19:59.316  INFO 7408 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 55 ms
+2019-02-22 15:19:59.978  INFO 7408 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-22 15:20:01.464  INFO 7408 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:20:01.467  INFO 7408 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:20:01.468  INFO 7408 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 15:20:01.477  INFO 7408 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 15:20:01.480  INFO 7408 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 15:21:25.830 ERROR 5216 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 15:21:26.064  INFO 5216 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 5216 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 15:21:26.064  INFO 5216 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: test
+2019-02-22 15:21:27.041  INFO 5216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 15:21:27.101  INFO 5216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 2 repository interfaces.
+2019-02-22 15:21:27.549  INFO 5216 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$174f53bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 15:21:27.742  INFO 5216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 15:21:27.910  INFO 5216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 15:21:28.012  INFO 5216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-02-21 14:07:46.937  INFO 9456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-21 14:07:46.938  INFO 9456 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-21 14:07:47.026  INFO 9456 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-21 14:07:47.119  INFO 9456 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-02-21 14:07:47.531  INFO 9456 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5cbe72b9'
-2019-02-21 14:07:47.534  INFO 9456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-21 14:07:47.926  INFO 9456 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e617c0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@126a9a77, org.springframework.security.web.header.HeaderWriterFilter@61c145cb, org.springframework.security.web.csrf.CsrfFilter@6b52a40, org.springframework.security.web.authentication.logout.LogoutFilter@3c20e9d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38f63756, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29ee8174, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f6d7e7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9a07409, org.springframework.security.web.session.SessionManagementFilter@511bfbb0, org.springframework.security.web.access.ExceptionTranslationFilter@55f23335, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6fbcc078]
-2019-02-21 14:07:48.037  INFO 9456 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-21 14:07:48.063  WARN 9456 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-21 14:07:48.225  INFO 9456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-02-21 14:07:48.228  INFO 9456 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 3.34 seconds (JVM running for 4.034)
-2019-02-21 14:11:13.605 ERROR 9268 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
-2019-02-21 14:11:13.683  INFO 9268 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 9268 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
-2019-02-21 14:11:13.690  INFO 9268 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: product
-2019-02-21 14:11:14.307  INFO 9268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-21 14:11:14.352  INFO 9268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 2 repository interfaces.
-2019-02-21 14:11:14.662  INFO 9268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26701cff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-21 14:11:14.919  INFO 9268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-02-21 14:11:14.939  INFO 9268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-21 14:11:14.939  INFO 9268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-02-21 14:11:14.944  INFO 9268 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
-2019-02-21 14:11:15.046  INFO 9268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-21 14:11:15.046  INFO 9268 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1310 ms
-2019-02-21 14:11:15.158  INFO 9268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-21 14:11:15.223  INFO 9268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-21 14:11:15.265  INFO 9268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-02-22 15:21:28.087  INFO 5216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 15:21:28.090  INFO 5216 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 15:21:28.278  INFO 5216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 15:21:28.467  INFO 5216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 15:21:29.144  INFO 5216 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@f5ae29e'
+2019-02-22 15:21:29.147  INFO 5216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:21:29.961  INFO 5216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70aa03c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@75da2db, org.springframework.security.web.header.HeaderWriterFilter@5cf33d25, org.springframework.security.web.csrf.CsrfFilter@1885dc2b, org.springframework.security.web.authentication.logout.LogoutFilter@34647f58, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2aeb7c4c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1826475, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e8aea7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44da745f, org.springframework.security.web.session.SessionManagementFilter@a80a896, org.springframework.security.web.access.ExceptionTranslationFilter@46b2a11a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@152035eb]
+2019-02-22 15:21:30.565  INFO 5216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:21:30.630  WARN 5216 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 15:21:31.210  INFO 5216 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 6.103 seconds (JVM running for 7.927)
+2019-02-22 15:21:31.379  INFO 5216 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-02-22 15:21:31.380  INFO 5216 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 15:21:31.397  INFO 5216 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 17 ms
+2019-02-22 15:21:31.534  INFO 5216 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-22 15:21:31.993  INFO 5216 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:21:31.994  INFO 5216 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:21:31.995  INFO 5216 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 15:21:32.002  INFO 5216 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 15:21:32.014  INFO 5216 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 15:33:54.825 ERROR 6684 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 15:33:55.022  INFO 6684 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 6684 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 15:33:55.023  INFO 6684 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: test
+2019-02-22 15:33:57.097  INFO 6684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 15:33:57.761  INFO 6684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 574ms. Found 2 repository interfaces.
+2019-02-22 15:33:58.404  INFO 6684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$839863c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 15:33:58.920  INFO 6684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 15:33:59.529  INFO 6684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 15:33:59.809  INFO 6684 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-02-21 14:11:15.307  INFO 9268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-21 14:11:15.309  INFO 9268 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-21 14:11:15.403  INFO 9268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-21 14:11:15.492  INFO 9268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-02-21 14:11:15.899  INFO 9268 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@26d24d7a'
-2019-02-21 14:11:15.901  INFO 9268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-21 14:11:16.268  INFO 9268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-21 14:11:16.296  WARN 9268 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-21 14:11:16.473  INFO 9268 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2019-02-22 15:34:00.205  INFO 6684 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 15:34:00.221  INFO 6684 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 15:34:02.824  INFO 6684 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 15:34:04.876  INFO 6684 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 15:34:06.232  INFO 6684 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7c9ea1d0'
+2019-02-22 15:34:06.235  INFO 6684 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:34:07.355  INFO 6684 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1eb52131, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ae5ddc0, org.springframework.security.web.header.HeaderWriterFilter@5acd7d1c, org.springframework.security.web.csrf.CsrfFilter@7b2f8152, org.springframework.security.web.authentication.logout.LogoutFilter@126a9a77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e617c0e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f4e389a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12ebfb2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e1598e5, org.springframework.security.web.session.SessionManagementFilter@178ba69f, org.springframework.security.web.access.ExceptionTranslationFilter@4bceac99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37b80ec7]
+2019-02-22 15:34:08.485  INFO 6684 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:34:08.692  WARN 6684 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 15:34:09.252  INFO 6684 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 15.21 seconds (JVM running for 17.171)
+2019-02-22 15:34:09.556  INFO 6684 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-02-22 15:34:09.556  INFO 6684 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 15:34:09.573  INFO 6684 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-02-22 15:34:09.675  INFO 6684 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-22 15:34:10.396  INFO 6684 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:34:10.400  INFO 6684 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:34:10.401  INFO 6684 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 15:34:10.416  INFO 6684 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 15:34:10.422  INFO 6684 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 15:35:00.297 ERROR 10516 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 15:35:00.408  INFO 10516 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 10516 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 15:35:00.409  INFO 10516 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: test
+2019-02-22 15:35:01.345  INFO 10516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 15:35:01.408  INFO 10516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 2 repository interfaces.
+2019-02-22 15:35:01.874  INFO 10516 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d32ac156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 15:35:02.085  INFO 10516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 15:35:02.238  INFO 10516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 15:35:02.343  INFO 10516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 15:35:02.426  INFO 10516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 15:35:02.428  INFO 10516 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 15:35:02.600  INFO 10516 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 15:35:02.795  INFO 10516 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 15:35:03.518  INFO 10516 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@664f49f'
+2019-02-22 15:35:03.522  INFO 10516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:35:04.385  INFO 10516 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ef5cde4, org.springframework.security.web.context.SecurityContextPersistenceFilter@12ebfb2d, org.springframework.security.web.header.HeaderWriterFilter@6d92e327, org.springframework.security.web.csrf.CsrfFilter@7acb5200, org.springframework.security.web.authentication.logout.LogoutFilter@26b3fe8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35f22eef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@180d918a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6549ce71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@359fa722, org.springframework.security.web.session.SessionManagementFilter@4177d422, org.springframework.security.web.access.ExceptionTranslationFilter@5f4e389a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c851821]
+2019-02-22 15:35:05.101  INFO 10516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:35:05.166  WARN 10516 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 15:35:05.699  INFO 10516 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 5.925 seconds (JVM running for 6.96)
+2019-02-22 15:35:05.842  INFO 10516 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-02-22 15:35:05.843  INFO 10516 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 15:35:05.858  INFO 10516 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
+2019-02-22 15:35:05.923  INFO 10516 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-22 15:35:06.386  INFO 10516 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:35:06.389  INFO 10516 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:35:06.391  INFO 10516 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 15:35:06.401  INFO 10516 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 15:35:06.405  INFO 10516 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 15:35:43.112 ERROR 9692 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 15:35:43.181  INFO 9692 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 9692 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 15:35:43.182  INFO 9692 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: test
+2019-02-22 15:35:43.689  INFO 9692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 15:35:43.735  INFO 9692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 2 repository interfaces.
+2019-02-22 15:35:43.988  INFO 9692 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77473379] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 15:35:44.496  INFO 9692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-22 15:35:44.529  INFO 9692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 15:35:44.530  INFO 9692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 15:35:44.543  INFO 9692 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 15:35:44.687  INFO 9692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 15:35:44.688  INFO 9692 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1470 ms
+2019-02-22 15:35:44.825  INFO 9692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 15:35:44.886  INFO 9692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 15:35:44.924  INFO 9692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 15:35:44.962  INFO 9692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 15:35:44.963  INFO 9692 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 15:35:45.045  INFO 9692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 15:35:45.139  INFO 9692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 15:35:45.526  INFO 9692 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2bd4780c'
+2019-02-22 15:35:45.528  INFO 9692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:35:45.924  INFO 9692 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e406cbe, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b52a40, org.springframework.security.web.header.HeaderWriterFilter@442310fd, org.springframework.security.web.csrf.CsrfFilter@50e6ee24, org.springframework.security.web.authentication.logout.LogoutFilter@55f23335, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6fc6f68f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e4c4fda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4177d422, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@141a10bf, org.springframework.security.web.session.SessionManagementFilter@3ca6bd01, org.springframework.security.web.access.ExceptionTranslationFilter@4bceac99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@574f9e36]
+2019-02-22 15:35:46.040  INFO 9692 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:35:46.071  WARN 9692 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 15:35:46.309  INFO 9692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-22 15:35:46.313  INFO 9692 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 3.578 seconds (JVM running for 4.469)
+2019-02-22 15:38:03.071  INFO 9692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-22 15:38:03.074  INFO 9692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-22 15:38:03.097  INFO 9692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2019-02-22 15:38:03.207  INFO 9692 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-22 15:39:14.493 ERROR 8836 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 15:39:14.563  INFO 8836 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 8836 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 15:39:14.563  INFO 8836 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: product
+2019-02-22 15:39:15.295  INFO 8836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 15:39:15.341  INFO 8836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 2 repository interfaces.
+2019-02-22 15:39:15.593  INFO 8836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$20705a0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 15:39:15.861  INFO 8836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-22 15:39:15.880  INFO 8836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 15:39:15.881  INFO 8836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 15:39:15.886  INFO 8836 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 15:39:15.992  INFO 8836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 15:39:15.992  INFO 8836 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1392 ms
+2019-02-22 15:39:16.099  INFO 8836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 15:39:16.165  INFO 8836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 15:39:16.203  INFO 8836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 15:39:16.243  INFO 8836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 15:39:16.244  INFO 8836 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 15:39:16.325  INFO 8836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 15:39:16.418  INFO 8836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 15:39:16.800  INFO 8836 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4e51eda7'
+2019-02-22 15:39:16.803  INFO 8836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:39:17.143  INFO 8836 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:39:17.167  WARN 8836 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 15:39:17.334  INFO 8836 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 47a5a8a8-e702-4b62-9928-8c858b0238b0
+Using generated security password: 99d86ded-c7b5-40cf-bcc1-5e778e4e276b
 
-2019-02-21 14:11:16.551  INFO 9268 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@234bfc8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@314c28dc, org.springframework.security.web.header.HeaderWriterFilter@3b6c740b, org.springframework.security.web.csrf.CsrfFilter@49c4118b, org.springframework.security.web.authentication.logout.LogoutFilter@6b32b678, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18d1d137, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@47994b51, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5008559a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@18bc1064, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f498f21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ffcdc9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c0bfe9e, org.springframework.security.web.session.SessionManagementFilter@78f4d15d, org.springframework.security.web.access.ExceptionTranslationFilter@3909308c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e288c76]
-2019-02-21 14:11:16.613  INFO 9268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-02-21 14:11:16.615  INFO 9268 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 3.291 seconds (JVM running for 3.919)
-2019-02-21 14:11:47.766 ERROR 8692 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
-2019-02-21 14:11:47.846  INFO 8692 --- [main] com.example.readinglist.DemoApplication  : Starting DemoApplication on THH8Y9L761U9Z4N with PID 8692 (C:\Users\Administrator\Desktop\readinglist\target\classes started by Administrator in C:\Users\Administrator\Desktop\readinglist)
-2019-02-21 14:11:47.846  INFO 8692 --- [main] com.example.readinglist.DemoApplication  : The following profiles are active: test
-2019-02-21 14:11:48.445  INFO 8692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-21 14:11:48.491  INFO 8692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 2 repository interfaces.
-2019-02-21 14:11:48.745  INFO 8692 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a420215] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-21 14:11:48.998  INFO 8692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-02-21 14:11:49.021  INFO 8692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-02-21 14:11:49.022  INFO 8692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-02-21 14:11:49.028  INFO 8692 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
-2019-02-21 14:11:49.133  INFO 8692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-02-21 14:11:49.133  INFO 8692 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1249 ms
-2019-02-21 14:11:49.244  INFO 8692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-21 14:11:49.305  INFO 8692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-21 14:11:49.344  INFO 8692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-02-22 15:39:17.404  INFO 8836 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2eea4441, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ffcdc9b, org.springframework.security.web.header.HeaderWriterFilter@4136b193, org.springframework.security.web.csrf.CsrfFilter@6a562255, org.springframework.security.web.authentication.logout.LogoutFilter@3ba8ef4e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35dc849b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@72b53f27, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1820f274, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@51e1e058, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19f99aaf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1adf387e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@221cdd87, org.springframework.security.web.session.SessionManagementFilter@570127fa, org.springframework.security.web.access.ExceptionTranslationFilter@1860b107, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1002b06d]
+2019-02-22 15:39:17.466  INFO 8836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-22 15:39:17.468  INFO 8836 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 3.263 seconds (JVM running for 3.852)
+2019-02-22 15:39:51.415 ERROR 13160 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 15:39:51.543  INFO 13160 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 13160 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 15:39:51.543  INFO 13160 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 15:39:53.607  INFO 13160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 15:39:53.714  INFO 13160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 2 repository interfaces.
+2019-02-22 15:39:54.549  INFO 13160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$818bfe30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 15:39:55.584  INFO 13160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 15:39:56.440  INFO 13160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 15:39:57.434  INFO 13160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-02-21 14:11:49.384  INFO 8692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-21 14:11:49.386  INFO 8692 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-21 14:11:49.480  INFO 8692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-21 14:11:49.567  INFO 8692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-02-21 14:11:49.959  INFO 8692 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5ec6a1b6'
-2019-02-21 14:11:49.961  INFO 8692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-21 14:11:50.329  INFO 8692 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e1598e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c9d833, org.springframework.security.web.header.HeaderWriterFilter@20518250, org.springframework.security.web.csrf.CsrfFilter@1abf951a, org.springframework.security.web.authentication.logout.LogoutFilter@5ae16aa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@782dc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20f99c18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d02c00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67a3394c, org.springframework.security.web.session.SessionManagementFilter@5ccc971e, org.springframework.security.web.access.ExceptionTranslationFilter@26b3fe8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@477bea57]
-2019-02-21 14:11:50.440  INFO 8692 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-21 14:11:50.472  WARN 8692 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-21 14:11:50.636  INFO 8692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-02-21 14:11:50.638  INFO 8692 --- [main] com.example.readinglist.DemoApplication  : Started DemoApplication in 3.149 seconds (JVM running for 3.762)
+2019-02-22 15:39:59.015  INFO 13160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 15:39:59.027  INFO 13160 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 15:40:01.307  INFO 13160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 15:40:03.966  INFO 13160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 15:40:06.032  INFO 13160 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5dd23809'
+2019-02-22 15:40:06.035  INFO 13160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:40:07.153  INFO 13160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:40:07.234  WARN 13160 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 15:40:07.754  INFO 13160 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 06e73412-318a-44d0-9576-93b97e48fb69
+
+2019-02-22 15:40:08.019  INFO 13160 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@558575fe, org.springframework.security.web.context.SecurityContextPersistenceFilter@639cb0c8, org.springframework.security.web.header.HeaderWriterFilter@35451ba6, org.springframework.security.web.csrf.CsrfFilter@6ad0cd43, org.springframework.security.web.authentication.logout.LogoutFilter@7c4a5ef2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@61f08aa9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62c42a3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@25fcdcc6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@736f2fb8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7901a5ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4add4dff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@180fb796, org.springframework.security.web.session.SessionManagementFilter@4a10c019, org.springframework.security.web.access.ExceptionTranslationFilter@1c528f2f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18301763]
+2019-02-22 15:40:08.167  INFO 13160 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 17.372 seconds (JVM running for 18.459)
+2019-02-22 15:40:08.455  INFO 13160 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-02-22 15:40:08.456  INFO 13160 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 15:40:08.469  INFO 13160 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
+2019-02-22 15:40:08.576  INFO 13160 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 15:40:08.577  INFO 13160 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 15:40:08.578  INFO 13160 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 15:40:08.586  INFO 13160 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 15:40:08.589  INFO 13160 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 15:40:33.008  INFO 8836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-22 15:40:33.011  INFO 8836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-22 15:40:33.036  INFO 8836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2019-02-22 16:14:01.308 ERROR 3308 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 16:14:01.511  INFO 3308 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 3308 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 16:14:01.511  INFO 3308 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 16:14:03.187  INFO 3308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 16:14:03.301  INFO 3308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96ms. Found 2 repository interfaces.
+2019-02-22 16:14:03.999  INFO 3308 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b98e5058] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 16:14:04.441  INFO 3308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 16:14:04.968  INFO 3308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 16:14:05.223  INFO 3308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 16:14:06.228  INFO 3308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 16:14:06.238  INFO 3308 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 16:14:06.596  INFO 3308 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 16:14:07.062  INFO 3308 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 16:14:08.935  INFO 3308 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@141b011a'
+2019-02-22 16:14:08.948  INFO 3308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 16:14:10.168  INFO 3308 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 16:14:10.227  WARN 3308 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 16:14:11.286  INFO 3308 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bc0381e5-79b7-4a22-bfd8-df5b79eade9c
+
+2019-02-22 16:14:11.863  INFO 3308 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@656c0eae, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d4f266, org.springframework.security.web.header.HeaderWriterFilter@29bf90fc, org.springframework.security.web.csrf.CsrfFilter@5dff108c, org.springframework.security.web.authentication.logout.LogoutFilter@37f627d0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@322eb1a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2a9ea03f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7d7f966f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@56adbb07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e0f259e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19b3d3a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29c21acb, org.springframework.security.web.session.SessionManagementFilter@32121140, org.springframework.security.web.access.ExceptionTranslationFilter@eb6ccbc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37ab1b10]
+2019-02-22 16:14:12.043  INFO 3308 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 11.496 seconds (JVM running for 13.842)
+2019-02-22 16:14:12.138  WARN 3308 --- [main] o.s.test.context.TestContextManager      : Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@34b9f960] for test method [public void com.example.readinglist.ReadingListControllerTest.homePage_authenticatedUser() throws java.lang.Exception] and test instance [com.example.readinglist.ReadingListControllerTest@1d4531fa]
+
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithUserDetails(value="craig", userDetailsServiceBeanName="", setupBefore=TEST_METHOD)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createTestSecurityContext(WithSecurityContextTestExecutionListener.java:126) ~[spring-security-test-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createTestSecurityContext(WithSecurityContextTestExecutionListener.java:96) ~[spring-security-test-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:62) ~[spring-security-test-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:291) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) ~[junit-rt.jar:na]
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: craig
+	at org.springframework.security.provisioning.InMemoryUserDetailsManager.loadUserByUsername(InMemoryUserDetailsManager.java:156) ~[spring-security-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:61) ~[spring-security-test-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory.createSecurityContext(WithUserDetailsSecurityContextFactory.java:44) ~[spring-security-test-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.createTestSecurityContext(WithSecurityContextTestExecutionListener.java:123) ~[spring-security-test-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 23 common frames omitted
+
+2019-02-22 16:14:13.608  INFO 3308 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 16:14:13.611  INFO 3308 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 16:14:13.612  INFO 3308 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 16:14:13.624  INFO 3308 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 16:14:13.629  INFO 3308 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 16:49:03.109 ERROR 11156 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 16:49:03.383  INFO 11156 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 11156 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 16:49:03.384  INFO 11156 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 16:49:07.773  INFO 11156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 16:49:08.440  INFO 11156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 558ms. Found 2 repository interfaces.
+2019-02-22 16:49:09.559  INFO 11156 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d9ff0e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 16:49:10.252  INFO 11156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 16:49:10.815  INFO 11156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 16:49:11.114  INFO 11156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 16:49:11.746  INFO 11156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 16:49:11.753  INFO 11156 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 16:49:12.452  INFO 11156 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 16:49:12.942  INFO 11156 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 16:49:14.503  INFO 11156 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@197d5a87'
+2019-02-22 16:49:14.512  INFO 11156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 16:49:16.382  INFO 11156 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 16:49:16.466  WARN 11156 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 16:49:17.186  INFO 11156 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c505a979-6893-44ee-af9f-bc3734085121
+
+2019-02-22 16:49:17.576  INFO 11156 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3331800f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f64f99f, org.springframework.security.web.header.HeaderWriterFilter@16732340, org.springframework.security.web.csrf.CsrfFilter@641cea11, org.springframework.security.web.authentication.logout.LogoutFilter@31f9f9b3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b86f4cb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@655f92a1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@c414eb3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@347f8029, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4601a148, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fe337a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4edd8a0a, org.springframework.security.web.session.SessionManagementFilter@7fa68ff4, org.springframework.security.web.access.ExceptionTranslationFilter@7d7c05fa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79ae3fb1]
+2019-02-22 16:49:17.837  INFO 11156 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 16.868 seconds (JVM running for 22.952)
+2019-02-22 16:49:19.990  INFO 11156 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-02-22 16:49:19.991  INFO 11156 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 16:49:20.031  INFO 11156 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 40 ms
+2019-02-22 16:49:21.545  INFO 11156 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 16:49:21.550  INFO 11156 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 16:49:21.551  INFO 11156 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 16:49:21.569  INFO 11156 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 16:49:21.574  INFO 11156 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 17:31:19.637 ERROR 11492 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 17:31:19.871  INFO 11492 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 11492 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 17:31:19.871  INFO 11492 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 17:31:23.445  INFO 11492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 17:31:23.924  INFO 11492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 389ms. Found 2 repository interfaces.
+2019-02-22 17:31:25.562  INFO 11492 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$602f5601] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 17:31:26.451  INFO 11492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-02-22 17:31:26.495  INFO 11492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 17:31:26.496  INFO 11492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 17:31:26.515  INFO 11492 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 17:31:26.743  INFO 11492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 17:31:26.744  INFO 11492 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6809 ms
+2019-02-22 17:31:27.253  INFO 11492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 17:31:27.733  INFO 11492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 17:31:28.539  INFO 11492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 17:31:30.243  INFO 11492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 17:31:30.248  INFO 11492 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 17:31:30.787  INFO 11492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 17:31:31.126  INFO 11492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 17:31:33.279  INFO 11492 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6a63ff31'
+2019-02-22 17:31:33.281  INFO 11492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:31:34.293  INFO 11492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:31:34.360  WARN 11492 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 17:31:35.801  INFO 11492 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3295fb36-2198-445e-9167-0a5a7c94df32
+
+2019-02-22 17:31:36.179  INFO 11492 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5aefdb9e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7359f3ac, org.springframework.security.web.header.HeaderWriterFilter@68cc6319, org.springframework.security.web.csrf.CsrfFilter@241abc2, org.springframework.security.web.authentication.logout.LogoutFilter@51d2d336, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@689eab53, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@eb09112, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7a491a60, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@470866d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c167296, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@202d1424, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@80b6098, org.springframework.security.web.session.SessionManagementFilter@544733a4, org.springframework.security.web.access.ExceptionTranslationFilter@16a15261, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@744199bb]
+2019-02-22 17:31:36.421  INFO 11492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57821 (http) with context path ''
+2019-02-22 17:31:36.448  INFO 11492 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 17.852 seconds (JVM running for 19.058)
+2019-02-22 17:31:36.710  INFO 11492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-02-22 17:31:36.710  INFO 11492 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 17:31:36.726  INFO 11492 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-02-22 17:31:36.829  INFO 11492 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-22 17:31:37.560  INFO 11492 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:31:37.563  INFO 11492 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:31:37.564  INFO 11492 --- [Thread-2] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 17:31:37.580  INFO 11492 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 17:31:37.583  INFO 11492 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 17:34:03.521 ERROR 8760 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 17:34:03.688  INFO 8760 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 8760 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 17:34:03.688  INFO 8760 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 17:34:04.651  INFO 8760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 17:34:04.730  INFO 8760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 2 repository interfaces.
+2019-02-22 17:34:05.235  INFO 8760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d138728] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 17:34:05.799  INFO 8760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-02-22 17:34:05.837  INFO 8760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 17:34:05.838  INFO 8760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 17:34:05.850  INFO 8760 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 17:34:06.048  INFO 8760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 17:34:06.049  INFO 8760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2345 ms
+2019-02-22 17:34:06.344  INFO 8760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 17:34:06.525  INFO 8760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 17:34:07.159  INFO 8760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 17:34:07.318  INFO 8760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 17:34:07.320  INFO 8760 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 17:34:07.478  INFO 8760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 17:34:07.643  INFO 8760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 17:34:09.631  INFO 8760 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@a2fb8a5'
+2019-02-22 17:34:09.634  INFO 8760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:34:10.668  INFO 8760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:34:10.730  WARN 8760 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 17:34:11.198  INFO 8760 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 08cd8cd0-7b4a-4595-b4c5-5ee1b3895554
+
+2019-02-22 17:34:11.384  INFO 8760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d0e43d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@22fe90df, org.springframework.security.web.header.HeaderWriterFilter@727de450, org.springframework.security.web.csrf.CsrfFilter@744199bb, org.springframework.security.web.authentication.logout.LogoutFilter@4f5df012, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@943cf5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@356ab368, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@df04d12, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@38213efa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@470866d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a0f4282, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@757f47f0, org.springframework.security.web.session.SessionManagementFilter@7077ae9c, org.springframework.security.web.access.ExceptionTranslationFilter@5c9168c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63fde7ca]
+2019-02-22 17:34:11.768  INFO 8760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-02-22 17:34:11.769  INFO 8760 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 17:34:11.785  INFO 8760 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-02-22 17:34:11.915  INFO 8760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57892 (http) with context path ''
+2019-02-22 17:34:11.918  INFO 8760 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 8.993 seconds (JVM running for 10.116)
+2019-02-22 17:34:12.466  INFO 8760 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:34:12.469  INFO 8760 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:34:12.470  INFO 8760 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 17:34:12.484  INFO 8760 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 17:34:12.491  INFO 8760 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 17:38:07.612 ERROR 6436 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 17:38:07.886  INFO 6436 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 6436 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 17:38:07.886  INFO 6436 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 17:38:11.415  INFO 6436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 17:38:11.899  INFO 6436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 398ms. Found 2 repository interfaces.
+2019-02-22 17:38:13.522  INFO 6436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$51107268] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 17:38:17.500  INFO 6436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-02-22 17:38:17.738  INFO 6436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 17:38:17.740  INFO 6436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 17:38:17.773  INFO 6436 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 17:38:18.517  INFO 6436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 17:38:18.517  INFO 6436 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10601 ms
+2019-02-22 17:38:19.051  INFO 6436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 17:38:19.553  INFO 6436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 17:38:19.865  INFO 6436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 17:38:20.185  INFO 6436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 17:38:20.188  INFO 6436 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 17:38:21.102  INFO 6436 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 17:38:21.475  INFO 6436 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 17:38:22.935  INFO 6436 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1b994617'
+2019-02-22 17:38:22.946  INFO 6436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:38:24.044  INFO 6436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:38:24.129  WARN 6436 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 17:38:24.730  INFO 6436 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 719ad2c2-9fea-40cb-937f-4355d3e2b660
+
+2019-02-22 17:38:25.061  INFO 6436 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3006aef5, org.springframework.security.web.context.SecurityContextPersistenceFilter@231c521e, org.springframework.security.web.header.HeaderWriterFilter@17554316, org.springframework.security.web.csrf.CsrfFilter@4d7fba20, org.springframework.security.web.authentication.logout.LogoutFilter@49482761, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1690929, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5ca006ac, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@16257f8c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a70daf4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33502cfe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4425b6ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62158618, org.springframework.security.web.session.SessionManagementFilter@5af1b221, org.springframework.security.web.access.ExceptionTranslationFilter@4f6a5cc9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ad9fea]
+2019-02-22 17:38:25.243  INFO 6436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-02-22 17:38:25.244  INFO 6436 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 17:38:25.268  INFO 6436 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 24 ms
+2019-02-22 17:38:25.426  INFO 6436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58101 (http) with context path ''
+2019-02-22 17:38:25.446  INFO 6436 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 19.064 seconds (JVM running for 22.587)
+2019-02-22 17:38:25.711  INFO 6436 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:38:25.713  INFO 6436 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:38:25.713  INFO 6436 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 17:38:25.720  INFO 6436 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 17:38:25.724  INFO 6436 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 17:40:12.577 ERROR 5072 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 17:40:12.749  INFO 5072 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 5072 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 17:40:12.749  INFO 5072 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 17:40:14.341  INFO 5072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 17:40:14.415  INFO 5072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 2 repository interfaces.
+2019-02-22 17:40:14.984  INFO 5072 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee47edf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 17:40:15.505  INFO 5072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-02-22 17:40:15.536  INFO 5072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 17:40:15.537  INFO 5072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 17:40:15.548  INFO 5072 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 17:40:15.731  INFO 5072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 17:40:15.731  INFO 5072 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2913 ms
+2019-02-22 17:40:16.030  INFO 5072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 17:40:16.189  INFO 5072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 17:40:16.293  INFO 5072 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 17:40:16.507  INFO 5072 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 17:40:16.512  INFO 5072 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 17:40:16.779  INFO 5072 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 17:40:17.613  INFO 5072 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 17:40:22.942  INFO 5072 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@68550d86'
+2019-02-22 17:40:22.959  INFO 5072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:40:24.921  INFO 5072 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:40:25.009  WARN 5072 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 17:40:25.808  INFO 5072 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2e6c53a2-04a6-4485-b694-2f62f58e981d
+
+2019-02-22 17:40:26.145  INFO 5072 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a6409ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@623ed5ed, org.springframework.security.web.header.HeaderWriterFilter@34a99d8, org.springframework.security.web.csrf.CsrfFilter@40b958c5, org.springframework.security.web.authentication.logout.LogoutFilter@6de4071b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4560eb15, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6f9999f6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4779df3d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@22a8c837, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@532e00bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2305aad0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32b8992e, org.springframework.security.web.session.SessionManagementFilter@13e6c544, org.springframework.security.web.access.ExceptionTranslationFilter@32eb38e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@436d2bb9]
+2019-02-22 17:40:26.382  INFO 5072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-02-22 17:40:26.383  INFO 5072 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 17:40:26.400  INFO 5072 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 17 ms
+2019-02-22 17:40:26.506  INFO 5072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58150 (http) with context path ''
+2019-02-22 17:40:26.511  INFO 5072 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 14.535 seconds (JVM running for 16.496)
+2019-02-22 17:40:26.786  INFO 5072 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:40:26.787  INFO 5072 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:40:26.788  INFO 5072 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 17:40:26.796  INFO 5072 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 17:40:26.798  INFO 5072 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 17:41:18.885 ERROR 2300 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 17:41:19.054  INFO 2300 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 2300 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 17:41:19.054  INFO 2300 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 17:41:20.027  INFO 2300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 17:41:20.100  INFO 2300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 2 repository interfaces.
+2019-02-22 17:41:20.650  INFO 2300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6f772605] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 17:41:21.292  INFO 2300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-02-22 17:41:21.327  INFO 2300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 17:41:21.328  INFO 2300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 17:41:21.339  INFO 2300 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 17:41:21.510  INFO 2300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 17:41:21.511  INFO 2300 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2435 ms
+2019-02-22 17:41:21.815  INFO 2300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 17:41:22.011  INFO 2300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 17:41:22.167  INFO 2300 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 17:41:22.289  INFO 2300 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 17:41:22.292  INFO 2300 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 17:41:22.475  INFO 2300 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 17:41:22.658  INFO 2300 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 17:41:23.428  INFO 2300 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5977bdea'
+2019-02-22 17:41:23.431  INFO 2300 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:41:24.234  INFO 2300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:41:24.305  WARN 2300 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 17:41:24.806  INFO 2300 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d1520daa-d923-44b1-a706-2abaabb0f010
+
+2019-02-22 17:41:24.996  INFO 2300 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20cf3ab3, org.springframework.security.web.context.SecurityContextPersistenceFilter@19d3f4fb, org.springframework.security.web.header.HeaderWriterFilter@5aefdb9e, org.springframework.security.web.csrf.CsrfFilter@11fa11b2, org.springframework.security.web.authentication.logout.LogoutFilter@46df794e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d2fe68a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@33986be7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1acfc058, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@561c031, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@356ab368, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31daf094, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@725490dd, org.springframework.security.web.session.SessionManagementFilter@80b6098, org.springframework.security.web.access.ExceptionTranslationFilter@11267e87, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d8e58d]
+2019-02-22 17:41:25.214  INFO 2300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-02-22 17:41:25.215  INFO 2300 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 17:41:25.235  INFO 2300 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 20 ms
+2019-02-22 17:41:25.545  INFO 2300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58182 (http) with context path ''
+2019-02-22 17:41:25.549  INFO 2300 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 7.317 seconds (JVM running for 8.361)
+2019-02-22 17:41:28.212  INFO 2300 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:41:28.214  INFO 2300 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:41:28.215  INFO 2300 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 17:41:28.223  INFO 2300 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 17:41:28.228  INFO 2300 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 17:42:35.685 ERROR 10776 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 17:42:35.856  INFO 10776 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 10776 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 17:42:35.856  INFO 10776 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 17:42:36.834  INFO 10776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 17:42:36.917  INFO 10776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 2 repository interfaces.
+2019-02-22 17:42:37.440  INFO 10776 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bf4dda0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 17:42:38.000  INFO 10776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-02-22 17:42:38.035  INFO 10776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 17:42:38.036  INFO 10776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 17:42:38.050  INFO 10776 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 17:42:38.229  INFO 10776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 17:42:38.231  INFO 10776 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2359 ms
+2019-02-22 17:42:38.535  INFO 10776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 17:42:38.718  INFO 10776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 17:42:38.837  INFO 10776 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 17:42:38.914  INFO 10776 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 17:42:38.917  INFO 10776 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 17:42:39.116  INFO 10776 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 17:42:39.332  INFO 10776 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 17:42:40.778  INFO 10776 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@87f6ab5'
+2019-02-22 17:42:40.782  INFO 10776 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:42:41.740  INFO 10776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:42:41.812  WARN 10776 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 17:42:42.307  INFO 10776 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 449a52b1-92ba-4121-b2bb-9fda269e13ee
+
+2019-02-22 17:42:42.506  INFO 10776 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41092c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@74267ece, org.springframework.security.web.header.HeaderWriterFilter@3458be63, org.springframework.security.web.csrf.CsrfFilter@689ea211, org.springframework.security.web.authentication.logout.LogoutFilter@22bca04e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@390978, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7bdddfa4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2e590e36, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12948e7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33986be7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70ab1ce0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fc2a1d1, org.springframework.security.web.session.SessionManagementFilter@5cb32140, org.springframework.security.web.access.ExceptionTranslationFilter@3398ed12, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e4b9592]
+2019-02-22 17:42:42.669  INFO 10776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-02-22 17:42:42.670  INFO 10776 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 17:42:42.691  INFO 10776 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 21 ms
+2019-02-22 17:42:42.775  INFO 10776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58220 (http) with context path ''
+2019-02-22 17:42:42.779  INFO 10776 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 7.651 seconds (JVM running for 8.855)
+2019-02-22 17:42:42.943  INFO 10776 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:42:42.944  INFO 10776 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:42:42.945  INFO 10776 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 17:42:42.952  INFO 10776 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 17:42:42.954  INFO 10776 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-22 17:43:16.575 ERROR 3228 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'WRAN' for 'null'
+2019-02-22 17:43:16.729  INFO 3228 --- [main] c.e.r.ReadingListControllerTest          : Starting ReadingListControllerTest on THH8Y9L761U9Z4N with PID 3228 (started by Administrator in C:\Users\Administrator\Desktop\readinglist)
+2019-02-22 17:43:16.730  INFO 3228 --- [main] c.e.r.ReadingListControllerTest          : The following profiles are active: product
+2019-02-22 17:43:17.646  INFO 3228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-22 17:43:17.723  INFO 3228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 2 repository interfaces.
+2019-02-22 17:43:18.428  INFO 3228 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3a82f53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 17:43:19.189  INFO 3228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-02-22 17:43:19.230  INFO 3228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-22 17:43:19.231  INFO 3228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 17:43:19.244  INFO 3228 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\misaki\apache-maven-3.6.0\bin;E:\spring-1.3.0.BUILD-SNAPSHOT\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;.]
+2019-02-22 17:43:19.430  INFO 3228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-22 17:43:19.430  INFO 3228 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2689 ms
+2019-02-22 17:43:19.804  INFO 3228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-22 17:43:19.961  INFO 3228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-22 17:43:20.057  INFO 3228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-22 17:43:20.137  INFO 3228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-22 17:43:20.139  INFO 3228 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-22 17:43:20.326  INFO 3228 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-22 17:43:20.504  INFO 3228 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-02-22 17:43:21.306  INFO 3228 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@41581c3f'
+2019-02-22 17:43:21.309  INFO 3228 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:43:22.155  INFO 3228 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:43:22.225  WARN 3228 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-22 17:43:22.689  INFO 3228 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 69907f35-c0c0-44e1-8c8e-76b0d328fd44
+
+2019-02-22 17:43:22.898  INFO 3228 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@752e4223, org.springframework.security.web.context.SecurityContextPersistenceFilter@33986be7, org.springframework.security.web.header.HeaderWriterFilter@139b3a29, org.springframework.security.web.csrf.CsrfFilter@6de4071b, org.springframework.security.web.authentication.logout.LogoutFilter@436d2bb9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29a1dab3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2003edf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7528089c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@71db6703, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e6f1f48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53b9952f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@136690b1, org.springframework.security.web.session.SessionManagementFilter@31daf094, org.springframework.security.web.access.ExceptionTranslationFilter@66df362c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75f446df]
+2019-02-22 17:43:23.060  INFO 3228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-02-22 17:43:23.061  INFO 3228 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-02-22 17:43:23.077  INFO 3228 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-02-22 17:43:23.162  INFO 3228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58248 (http) with context path ''
+2019-02-22 17:43:23.165  INFO 3228 --- [main] c.e.r.ReadingListControllerTest          : Started ReadingListControllerTest in 7.009 seconds (JVM running for 8.177)
+2019-02-22 17:43:23.353  INFO 3228 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-22 17:43:23.355  INFO 3228 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-22 17:43:23.356  INFO 3228 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-02-22 17:43:23.367  INFO 3228 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-22 17:43:23.369  INFO 3228 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

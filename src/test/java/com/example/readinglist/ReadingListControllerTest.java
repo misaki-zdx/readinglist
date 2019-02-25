@@ -1,12 +1,14 @@
 package com.example.readinglist;
 
 import org.hamcrest.Matchers;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithUserDetails;
@@ -32,7 +34,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.RANDOM_PORT)     //不要具体给定任意一个测试类 那样回家再不到其它的依赖类
+//开启自定义端口 改变为上面的这种形式
+//使用 @springTest 时，自动集成了许多自定义配置，比如自动开启springSecurity.而在使用@WebAppConfiguration时，则这些需要自己来开启
 //@WebAppConfiguration
+
+/*测试环境加载一些配置信息的二种方式：
+        第一种是使用@SpringBootTest注解，注解参数properties指定其value值。
+        第二种使用EnvironmentTestUtils.addEnvironment方法进行设置。*/
 @AutoConfigureMockMvc //自动配置mockmvc 不需要以下的@before
 public class ReadingListControllerTest {
 
@@ -40,6 +48,9 @@ public class ReadingListControllerTest {
     private WebApplicationContext webContext;*/
     @Autowired
     private MockMvc mockMvc;
+
+    @Autowired
+    private Environment environment;
 
    /* @Before
     public void setupMockMvc(){
@@ -112,6 +123,19 @@ public class ReadingListControllerTest {
             assertEquals(HttpStatus.NOT_FOUND, e.getStatusCode());
             throw e;
         }
+    }
+
+    @Test
+    public void testValue(){
+        String[] activeProfiles = environment.getActiveProfiles();
+        for (String t : activeProfiles){
+            System.out.println(t);
+        }
+        String[] defaultProfiles = environment.getDefaultProfiles();
+        for (String t : defaultProfiles){
+            System.out.println(t);
+        }
+        Assert.assertEquals("xxx",environment.getProperty("developer.name"));
     }
 
 }

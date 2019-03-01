@@ -1,5 +1,6 @@
 package com.example.readinglist;
 
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -38,7 +39,6 @@ public class Reader implements UserDetails {
     public void setPassword(String password) {
         this.password = password;
     }
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Arrays.asList(new SimpleGrantedAuthority("READER"));

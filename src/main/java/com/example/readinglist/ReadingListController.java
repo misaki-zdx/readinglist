@@ -3,9 +3,7 @@ package com.example.readinglist;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,7 +12,7 @@ import java.util.List;
  * @date 2019/2/19/019 11:24
  **/
 
-@Controller
+@RestController
 @RequestMapping("/")
 public class ReadingListController {
 
@@ -25,7 +23,12 @@ public class ReadingListController {
         this.readingListRepository = readingListRepository;
     }
 
-    @RequestMapping(value = "/{reader}", method = RequestMethod.GET)
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello springBoot";
+    }
+
+   /* @RequestMapping(value = "/{reader}", method = RequestMethod.GET)
     public String readersBooks(@PathVariable("reader") String reader, Model model) {
         List<Book> readingList = readingListRepository.findByReader(reader);
         if (readingList != null) {
@@ -41,5 +44,5 @@ public class ReadingListController {
         readingListRepository.save(book);
         System.out.println(readingListRepository.findAll());
         return "redirect:/{reader}";
-    }
+    }*/
 }
